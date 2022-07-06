@@ -1,0 +1,110 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { 
+    text-decoration: none;
+}
+
+html {
+     /*variáveis*/
+    --bg-color: #E5E5E5;
+    --text-color: #00082F;
+    --primary-color: #4263EB;
+    --primary-color-dark: #364FC7;
+}
+
+body.Dark-Red {
+    --bg-color: #8B0000;
+    --text-color: #000000;
+    --primary-color: #CD5C5C;
+    --primary-color-dark: #A52A2A;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;
+}
+
+h1 {
+    font-size: 32px;
+    margin-top: 27px;
+    margin-bottom: 8px;
+    
+}
+
+.Username {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+
+
+img {
+    width: 100%;
+}
+
+img.Luffy {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+  border: var(--primary-color) solid 4px;
+}
+
+ul {
+   list-style: none;
+   margin: 48px 0px;
+}
+
+
+
+ul li a {
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color); 
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    transition: 400ms;
+
+}
+
+footer {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity 400ms;
+}
+
+/* pseudo class */
+ul li a:hover {
+    background: var(--primary-color-dark);
+}
+
+footer:hover {
+  opacity: 10;
+}
+
+footer {
+    color: var(--text-color);
+}
